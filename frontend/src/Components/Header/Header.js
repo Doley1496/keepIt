@@ -90,8 +90,8 @@ const Header = () => {
       const { data } = await axios.get(`${REACT_APP_SERVER_URL}/v1/get-image`);
 
       setProfilePic(
-        // img_path + "1695270835471_Adidas.webp"
-        img_path + data?.profilePhoto
+        img_path + "1695270835471_Adidas.webp"
+        // img_path + data?.profilePhoto
       );
 
       /* Catching the error and displaying it. */
