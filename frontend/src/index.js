@@ -45,3 +45,6 @@ reportWebVitals();
 //     "react-app/jest"
 //   ]
 // },
+
+// "client": "npm start --prefix ../Frontend",
+// "dev": "concurrently \"npm run server\" \"npm run client\""
