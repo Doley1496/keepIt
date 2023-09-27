@@ -19,7 +19,7 @@ import { useDispatch } from "react-redux";
 /* Importing authActions variable from ReduxStore.js */
 import { authActions } from "../../Components/ReduxStore/ReduxStore.js";
 
-let REACT_APP_CLIENT_URL = process.env.REACT_APP_CLIENT_URL;
+let REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const Header = () => {
   /* */
@@ -87,7 +87,7 @@ const Header = () => {
       //   `https://keepitfrontdoley.onrender.com/api/v1/get-image`
       // );
 
-      const { data } = await axios.get(`${REACT_APP_CLIENT_URL}/v1/get-image`);
+      const { data } = await axios.get(`${REACT_APP_SERVER_URL}/v1/get-image`);
 
       setProfilePic(
         // img_path + "1695270835471_Adidas.webp"

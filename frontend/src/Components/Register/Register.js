@@ -13,7 +13,7 @@ import { BiShow, BiHide } from "react-icons/bi";
 
 import SignUpLogo from "../../images/signUp.png";
 
-let REACT_APP_CLIENT_URL = process.env.REACT_APP_CLIENT_URL;
+let REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const Register = () => {
   /* */
@@ -124,7 +124,7 @@ const Register = () => {
       // );
 
       const { data } = await axios.post(
-        `${REACT_APP_CLIENT_URL}/v1/register`,
+        `${REACT_APP_SERVER_URL}/v1/register`,
         userData
       );
 

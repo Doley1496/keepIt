@@ -13,7 +13,7 @@ import { authActions } from "../ReduxStore/ReduxStore.js";
 
 import { BiShow, BiHide } from "react-icons/bi";
 
-let REACT_APP_CLIENT_URL = process.env.REACT_APP_CLIENT_URL;
+let REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const Login = () => {
   /* */
@@ -92,7 +92,7 @@ const Login = () => {
       // );
 
       const { data } = await axios.post(
-        `${REACT_APP_CLIENT_URL}/v1/login`,
+        `${REACT_APP_SERVER_URL}/v1/login`,
         Inputs
       );
 

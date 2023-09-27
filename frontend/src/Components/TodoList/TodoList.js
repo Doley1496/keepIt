@@ -11,7 +11,7 @@ import axios from "axios";
 let id = sessionStorage.getItem("id");
 let toUpdateArray = [];
 
-let REACT_APP_CLIENT_URL = process.env.REACT_APP_CLIENT_URL;
+let REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 /* Creating a component name TodoList() where we are writing the logic to show the input fields to
    create a new todo-list and show that created todo-list in a card.  
@@ -102,7 +102,7 @@ const TodoList = () => {
         //   }
         // );
 
-        await axios.post(`${REACT_APP_CLIENT_URL}/v2/create-task/${id}`, {
+        await axios.post(`${REACT_APP_SERVER_URL}/v2/create-task/${id}`, {
           title: Inputs.title,
           body: Inputs.body,
           id: id,
@@ -173,7 +173,7 @@ const TodoList = () => {
         // );
 
         const { data } = await axios.get(
-          `${REACT_APP_CLIENT_URL}/v2/get-task/${id}`
+          `${REACT_APP_SERVER_URL}/v2/get-task/${id}`
         );
 
         /* When we successfully get all the todo-lists then we will set the ContentArray with the todo-lists
@@ -230,7 +230,7 @@ const TodoList = () => {
         // );
 
         const { data } = await axios.delete(
-          `${REACT_APP_CLIENT_URL}/v2/delete-task/${cardId}`,
+          `${REACT_APP_SERVER_URL}/v2/delete-task/${cardId}`,
           { data: { id: id } }
         );
 
@@ -275,7 +275,7 @@ const TodoList = () => {
   */
   useEffect(() => {
     getTodoLists();
-  }, [getTodoLists]);
+  }, [getTodoLists()]);
 
   /* ***************************************************************************************************** */
   /* ***************************************************************************************************** */

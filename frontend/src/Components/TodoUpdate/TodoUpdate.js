@@ -6,7 +6,7 @@ import axios from "axios";
 
 let id = sessionStorage.getItem("id");
 
-let REACT_APP_CLIENT_URL = process.env.REACT_APP_CLIENT_URL;
+let REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const TodoUpdate = ({ displayCurrentCardItem }) => {
   /* */
@@ -85,7 +85,7 @@ const TodoUpdate = ({ displayCurrentCardItem }) => {
         // );
 
         const { data } = await axios.put(
-          `${REACT_APP_CLIENT_URL}/v2/update-task/${displayCurrentCardItem._id}`,
+          `${REACT_APP_SERVER_URL}/v2/update-task/${displayCurrentCardItem._id}`,
           Inputs
         );
 
