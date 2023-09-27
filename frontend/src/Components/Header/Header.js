@@ -79,6 +79,13 @@ const Header = () => {
 
       const img_path = process.env.REACT_APP_IMAGE_PATH;
 
+      const { data } = await axios.get(`${REACT_APP_SERVER_URL}/v1/get-image`);
+
+      setProfilePic(
+        img_path + "1695270835471_Adidas.webp"
+        // img_path + data?.profilePhoto
+      );
+
       // const { data } = await axios.get(
       //   "http://localhost:8000/api/v1/get-image"
       // );
@@ -86,13 +93,6 @@ const Header = () => {
       // const { data } = await axios.get(
       //   `https://keepitfrontdoley.onrender.com/api/v1/get-image`
       // );
-
-      const { data } = await axios.get(`${REACT_APP_SERVER_URL}/v1/get-image`);
-
-      setProfilePic(
-        img_path + "1695270835471_Adidas.webp"
-        // img_path + data?.profilePhoto
-      );
 
       /* Catching the error and displaying it. */
     } catch (error) {
