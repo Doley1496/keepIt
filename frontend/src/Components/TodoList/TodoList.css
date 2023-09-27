@@ -1,0 +1,49 @@
+/* ========================================= */
+/* ========= Todo-list ========= */
+
+/* Styling the whole todo-list page */
+.todoList {
+  background-color: #d1e08e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* Removing the border of both the inputs */
+.todo-inputs {
+  border: none;
+  outline: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+/* Styling the todo-list part ie. TITLE and BODY */
+.todo-inputs-div {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Hiding the textArea */
+#textArea {
+  display: none;
+}
+
+/* Designing the whole card part. */
+.container-todo {
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  min-width: 150px;
+  background: #a9e0dc;
+  background-image: radial-gradient(#89bae2 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 1rem;
+  box-sizing: border-box;
+}

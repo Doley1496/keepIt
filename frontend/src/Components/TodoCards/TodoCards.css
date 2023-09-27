@@ -1,0 +1,42 @@
+/* ========================================= */
+/* ========= Todo Cards ========= */
+
+/* Styling the whole card. */
+.todo-cards {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Styling the card paragraph. */
+.todo-cards-p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Styling the delete button. */
+.delete {
+  color: rgb(172, 14, 14);
+}
+
+/* Styling the update button. */
+.update {
+  color: rgba(48, 9, 6, 0.918);
+}
+
+/* Styling the card's react icons. */
+.card-icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Styling the card's icon and text part. */
+.card-icon-head {
+  cursor: pointer;
+  transition: all 0.3;
+}
+
+/* Styling the card's icon and text part with hover property. */
+.card-icon-head:hover {
+  box-shadow: rgba(11, 211, 71, 0.35) 0px 5px 25px;
+  transition: all 0.3;
+}

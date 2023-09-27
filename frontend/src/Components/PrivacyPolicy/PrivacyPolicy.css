@@ -1,0 +1,29 @@
+/* ========================================= */
+/* ========= Privacy Policy ========= */
+.policy {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.policy p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.policy h1 {
+  border-bottom: 1px solid #5a5a57;
+  padding: 5px;
+}
+
+.under {
+  text-decoration-line: underline;
+}

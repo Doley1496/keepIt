@@ -1,0 +1,17 @@
+/* ========================================= */
+/* ========= Header ========= */
+
+.user-profile-pic {
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+}
+.navbar-brand {
+  color: #3ebd25;
+}
+.btn-nav {
+  background-color: #fff387;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
