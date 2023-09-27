@@ -12,7 +12,7 @@ const cors = require("cors");
 
 const bodyParser = require("body-parser");
 
-const path = require("path");
+// const path = require("path");
 
 /* Getting the database that we connected to the mongoDb server in db.js */
 require("./Config/db.js");
@@ -49,11 +49,11 @@ app.use("/api/v2", todolistRoutes);
 // /**********************************  RENDER **************************************************** */
 
 /* Deployment of static files using RENDER. */
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-});
+// app.get("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+// });
 
 // /**********************************  RENDER **************************************************** */
 
