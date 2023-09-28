@@ -158,7 +158,7 @@ const TodoUpdate = ({ displayCurrentCardItem }) => {
         <textarea
           name="body"
           placeholder="BODY"
-          value={Inputs.title || ""}
+          value={Inputs.body || ""}
           onChange={change}
           className="todo-inputs w-100 p-3"
         />

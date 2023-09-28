@@ -43,13 +43,6 @@ const Policy = () => {
             using the Service, You agree to the collection and use of
             information in accordance with this Privacy Policy. This Privacy
             Policy has been created with the help of the{" "}
-            <a
-              href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/"
-              target="_blank"
-            >
-              Free Privacy Policy Generator
-            </a>
-            .
           </p>
           <h2>Interpretation and Definitions</h2>
           <h3>Interpretation</h3>
@@ -144,11 +137,11 @@ const Policy = () => {
               <p>
                 <strong>Website</strong> refers to keepIt, accessible from{" "}
                 <a
-                  href="https://todofrontdoley14.onrender.com"
+                  href="https://madhurtodolist14.netlify.app/"
                   rel="external nofollow noopener"
                   target="_blank"
                 >
-                  https://todofrontdoley14.onrender.com
+                  https://madhurtodolist14.netlify.app/
                 </a>
               </p>
             </li>
@@ -269,14 +262,7 @@ const Policy = () => {
             Cookies. Persistent Cookies remain on Your personal computer or
             mobile device when You go offline, while Session Cookies are deleted
             as soon as You close Your web browser. Learn more about cookies on
-            the{" "}
-            <a
-              href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking"
-              target="_blank"
-            >
-              Free Privacy Policy website
-            </a>{" "}
-            article.
+            the article.
           </p>
           <p>
             We use both Session and Persistent Cookies for the purposes set out

@@ -35,7 +35,7 @@ const Contact = () => {
 
           <p className="mt-3">
             {/* Using React icon BiMailSend */}
-            <BiMailSend /> : www.help@todofrontdoley14.onrender.com
+            <BiMailSend /> : www.info@madhurtodolist14.com
           </p>
 
           {/* Using React icon BiPhoneCall */}
