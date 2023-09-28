@@ -389,17 +389,17 @@ const getImageController = async (req, res) => {
        on the basis of the user's profilePhoto.
     */
 
-    // const profileImage = await userModels.findOne({
-    //   profilePhoto: req.file.filename,
-    // });
-    // console.log(profileImage);
+    const profileImage = await userModels.findOne({
+      profilePhoto: req.file.filename,
+    });
 
-    const allUser = await userModels.find({});
+    // const allUser = await userModels.find({});
 
     /* When profile photo exist in our database then we will send a message that it exists. */
     return res.status(200).send({
       success: true,
       message: "Successfully got the user's profile photo.",
+      profileImage,
     });
 
     /* Catching the error and displaying it. */

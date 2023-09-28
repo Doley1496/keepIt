@@ -81,17 +81,16 @@ const Header = () => {
 
       const { data } = await axios.get(`${REACT_APP_SERVER_URL}/v1/get-image`);
 
-      setProfilePic(
-        img_path + "1695270835471_Adidas.webp"
-        // img_path + data?.profilePhoto
-      );
+      setProfilePic(img_path + "1695270835471_Adidas.webp");
+
+      // img_path + data?.profileImage
 
       // const { data } = await axios.get(
       //   "http://localhost:8000/api/v1/get-image"
       // );
 
       // const { data } = await axios.get(
-      //   `https://keepitfrontdoley.onrender.com/api/v1/get-image`
+      //   `https://keepitbackdoley.onrender.com/api/v1/get-image`
       // );
 
       /* Catching the error and displaying it. */

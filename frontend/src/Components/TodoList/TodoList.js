@@ -94,7 +94,7 @@ const TodoList = () => {
         // });
 
         // await axios.post(
-        //   `https://keepitfrontdoley.onrender.com/api/v2/create-task/${id}`,
+        //   `https://keepitbackdoley.onrender.com/api/v2/create-task/${id}`,
         //   {
         //     title: Inputs.title,
         //     body: Inputs.body,
@@ -169,7 +169,7 @@ const TodoList = () => {
         // );
 
         // const { data } = await axios.get(
-        //   `https://keepitfrontdoley.onrender.com/api/v2/get-task/${id}`
+        //   `https://keepitbackdoley.onrender.com/api/v2/get-task/${id}`
         // );
 
         const { data } = await axios.get(
@@ -218,6 +218,10 @@ const TodoList = () => {
            that we will get from the controller function getTaskController() which is made for this
            following route(api endpoint).
         */
+        const { data } = await axios.delete(
+          `${REACT_APP_SERVER_URL}/v2/delete-task/${cardId}`,
+          { data: { id: id } }
+        );
 
         // const { data } = await axios.delete(
         //   `http://localhost:8000/api/v2/delete-task/${cardId}`,
@@ -225,14 +229,9 @@ const TodoList = () => {
         // );
 
         // const { data } = await axios.delete(
-        //   `https://keepitfrontdoley.onrender.com/api/v2/delete-task/${cardId}`,
+        //   `https://keepitbackdoley.onrender.com/api/v2/delete-task/${cardId}`,
         //   { data: { id: id } }
         // );
-
-        const { data } = await axios.delete(
-          `${REACT_APP_SERVER_URL}/v2/delete-task/${cardId}`,
-          { data: { id: id } }
-        );
 
         /* When we successfully deleted the todo-list then we will show a toast success message and
            call the getTodoLists() function else show a error message.
@@ -297,8 +296,8 @@ const TodoList = () => {
               type="text"
               placeholder="TITLE"
               name="title"
-              // value={Inputs.title}
-              value={Inputs.title || ""}
+              // value={Inputs.title || ""}
+              value={Inputs.title}
               className="my-3 p-2 todo-inputs"
               onClick={showBody}
               onChange={change}
@@ -309,8 +308,8 @@ const TodoList = () => {
               type="text"
               placeholder="BODY"
               name="body"
-              // value={Inputs.body}
-              value={Inputs.title || ""}
+              // value={Inputs.body || ""}
+              value={Inputs.body}
               className="p-2 todo-inputs"
               id="textArea"
               onChange={change}

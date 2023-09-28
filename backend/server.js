@@ -1,12 +1,13 @@
 /* */
 // eslint-disable-next-line
 
-/* requiring and configuring the dotenv. */
-require("dotenv").config();
+// /* requiring and configuring the dotenv. */
+// require("dotenv").config();
 
 /* server.js is a nodeJs file therefore instead of import we will use require method */
 
 const express = require("express");
+const dotenv = require("dotenv");
 
 const cors = require("cors");
 
@@ -16,6 +17,9 @@ const bodyParser = require("body-parser");
 
 /* Getting the database that we connected to the mongoDb server in db.js */
 require("./Config/db.js");
+
+/* requiring and configuring the dotenv. */
+dotenv.config();
 
 /* Getting the routes from the Routes folder. */
 const authRoutes = require("./Routes/authRoutes.js");

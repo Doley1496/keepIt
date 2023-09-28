@@ -15,8 +15,7 @@ import { Provider } from "react-redux";
 /* Importing component ReduxStore from ./Components/ReduxStore/ReduxStore.js  */
 import { authStore } from "./Components/ReduxStore/ReduxStore.js";
 
-// import dotenv from "dotenv";
-// dotenv.config();
+require("dotenv").config();
 
 /* Enabling all the context api in our application so that we can use it in any component globally. */
 

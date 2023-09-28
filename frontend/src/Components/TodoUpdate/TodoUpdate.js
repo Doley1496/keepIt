@@ -73,6 +73,10 @@ const TodoUpdate = ({ displayCurrentCardItem }) => {
            that we will get from the controller function updateTaskController() which is made for this
            following route(api endpoint).
         */
+        const { data } = await axios.put(
+          `${REACT_APP_SERVER_URL}/v2/update-task/${displayCurrentCardItem._id}`,
+          Inputs
+        );
 
         // const { data } = await axios.put(
         //   `http://localhost:8000/api/v2/update-task/${displayCurrentCardItem._id}`,
@@ -80,14 +84,9 @@ const TodoUpdate = ({ displayCurrentCardItem }) => {
         // );
 
         // const { data } = await axios.put(
-        //   `https://keepitfrontdoley.onrender.com/api/v2/update-task/${displayCurrentCardItem._id}`,
+        //   `https://keepitbackdoley.onrender.com/api/v2/update-task/${displayCurrentCardItem._id}`,
         //   Inputs
         // );
-
-        const { data } = await axios.put(
-          `${REACT_APP_SERVER_URL}/v2/update-task/${displayCurrentCardItem._id}`,
-          Inputs
-        );
 
         /* When we successfully updated the todo-list then we will show a toast success message and
            call the getTodoLists() function else show a error message.
